@@ -52,7 +52,6 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
     font-size: 1rem;
@@ -86,7 +85,7 @@ nav a:hover::after {
     color: white;
     padding: 12px 24px;
     border-radius: 30px;
-    text-decoration: none;
+    
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(16, 110, 50, 0.2);
@@ -157,7 +156,6 @@ p {
     color: white;
     padding: 15px 35px;
     font-weight: 600;
-    text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -173,7 +171,6 @@ p {
     color: var(--text-dark);
     padding: 15px 35px;
     font-weight: 600;
-    text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -268,6 +265,7 @@ p {
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
+   
 }
 
 .sobre-image::before {
@@ -329,7 +327,6 @@ p {
     border-radius: 20px;
     padding: 0; /* IMPORTANTE */
     text-align: center;
-    text-decoration: none;
     color: var(--text-dark);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -445,7 +442,6 @@ p {
 }
 
 .footer ul li a {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.85);
     font-size: 0.95rem;
     transition: color 0.3s;
