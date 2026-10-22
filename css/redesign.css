@@ -28,8 +28,7 @@ body { overflow-x: clip; }
 .hero-bottom span { color: #7dab84; }
 .hero-media { min-height: 620px; }
 .hero-media .gallery-image { object-position: center 39%; }
-.hero-media .gallery-image:nth-child(2) { object-position: center 34%; }
-.hero-media .gallery-image:nth-child(3) { object-position: center 28%; }
+.hero-media .gallery-image:nth-child(n+2):nth-child(-n+5) { object-position: center 12%; }
 .hero-media-shade { background: linear-gradient(0deg,rgba(5,34,19,.47),transparent 36%); }
 .hero-media-caption { right: 40px; bottom: 40px; left: 40px; font-size: .7rem; letter-spacing: .17em; }
 .hero-orbit { position: absolute; z-index: 4; right: calc(46% - 104px); bottom: 92px; display: grid; place-items: center; width: 208px; height: 208px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; background: var(--green-deep); box-shadow: 0 22px 50px rgba(8,61,34,.22); pointer-events: none; }
@@ -53,6 +52,8 @@ body { overflow-x: clip; }
 .brand-card { aspect-ratio: 1.24; }
 .brand-card-media .gallery-image { object-position: center 22%; }
 .brand-card-joog .gallery-image:first-child { object-position: center 28%; }
+.brand-card-joog .joog-product-detail { object-fit: contain; background: #b8b5b1; }
+.brand-card-joog .joog-product-wide { background: #e4d9ca; }
 .brand-card-sances .gallery-image { object-position: center 32%; }
 .brand-card-lame .gallery-image { object-position: center 25%; }
 .brand-card-infinity .gallery-image { object-position: center 24%; }
