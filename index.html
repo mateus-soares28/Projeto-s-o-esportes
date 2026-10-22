@@ -1,222 +1,159 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S&O Sports - Loja Oficial</title>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b512b">
+  <meta name="description" content="S&O Sports: roupas esportivas para beach tennis, tênis, padel e outros esportes de raquete. Conheça as marcas e fale pelo WhatsApp.">
+  <title>S&O Sports | Vista o seu melhor jogo</title>
+  <link rel="icon" type="image/jpeg" href="./image/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
+  <link rel="stylesheet" href="./css/redesign.css">
+  <script src="./js/vendor/gsap.min.js" defer></script>
+  <script src="./js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/tennis-ball.js" type="module"></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a class="brand" href="#topo" aria-label="S&O Sports, voltar ao início"><img src="./image/logo.jpg" alt="" width="58" height="58"><span>S&O <strong>SPORTS</strong></span></a>
+      <nav class="site-nav" id="navegacao" aria-label="Navegação principal">
+        <a href="#marcas">Marcas</a><a href="#sobre">Nossa história</a><a href="#contato">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-whatsapp" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20roupas%20da%20S%26O%20Sports." target="_blank" rel="noopener noreferrer">Fale no WhatsApp <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
+        <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo-container">
-            <img class="logo" src="./image/logo.jpg" alt="S&O Sports Logo">
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-copy-inner" data-reveal="left">
+          <p class="hero-intro">MODA ESPORTIVA PARA QUEM VIVE O JOGO</p>
+          <h1 id="hero-title">Vista o seu <em>melhor jogo.</em></h1>
+          <p class="hero-description">Roupas para acompanhar você em cada ponto. Do beach tennis aos outros esportes de raquete, encontre o estilo que combina com o seu jogo.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#marcas">Explorar marcas <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></a>
+            <a class="text-link text-link-light" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20quero%20conhecer%20as%20roupas%20da%20S%26O%20Sports." target="_blank" rel="noopener noreferrer">Conversar com a S&O</a>
+          </div>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-            </ul>
-        </nav>
-
-        <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre roupas que vocês possuem."
-            class="contato-btn">
-            <span>Fale Conosco</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                </path>
-            </svg>
-        </a>
-    </header>
-
-
-    <!---- SECAO 1 -->
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="tagline">Desde 2020</span>
-            <h1>Vista o seu <br><span>Melhor Jogo</span></h1>
-            <p>Roupas esportivas que unem performance e estilo clássico. Descubra a nova coleção da S&O Sports.</p>
-
-            <div class="grupo-opcao">
-                <a href="#marcas" class="btn-primario">Ver Coleção</a>
-                <a href="#marcas" class="btn-secundario">Marcas</a>
-            </div>
-        </div>
-
-        <div class="hero-visual">
-            <div class="circulo-bg"></div>
-            <div class="produto-image">
-                <img src="./image/atleta.jpg" alt="Atleta vestindo S&O"
-                    style="width:100%; height:100%; object-fit:cover; border-radius: 20px;">
-            </div>
-        </div>
+        <p class="hero-bottom">BEACH TENNIS <span aria-hidden="true">/</span> PADEL <span aria-hidden="true">/</span> TÊNIS</p>
+      </div>
+      <div class="hero-media" data-gallery data-interval="5200" aria-label="Fotos de roupas esportivas S&O">
+        <img class="gallery-image is-active" src="./image/WhatsApp Image 2026-10-21 at 23.15.49.jpeg" alt="Atleta com vestido esportivo azul" width="944" height="1600" fetchpriority="high">
+        <img class="gallery-image" src="./image/WhatsApp Image 2026-10-21 at 23.15.47 (2).jpeg" alt="Atleta com blusa esportiva lilás ao ar livre" width="899" height="1599">
+        <img class="gallery-image" src="./image/WhatsApp Image 2026-10-21 at 23.15.49 (2).jpeg" alt="Atleta com raquete e roupa esportiva branca" width="899" height="1599">
+        <div class="hero-media-shade" aria-hidden="true"></div>
+        <div class="hero-media-caption"><span>ESTILO EM MOVIMENTO</span><span class="gallery-counter" aria-hidden="true">01 / 03</span></div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><img class="hero-ball-fallback" src="./image/beach-tennis-ball-cutout.png" alt="" width="1254" height="1254"><canvas id="tennis-ball"></canvas><span>ENERGIA<br>EM CADA<br>PONTO.</span></div>
     </section>
 
+    <div class="sport-strip" aria-hidden="true"><div class="sport-strip-track">
+      <span>BEACH TENNIS</span><i></i><span>PADEL</span><i></i><span>TÊNIS</span>
+    </div></div>
 
-    <!---- SECAO 2 -->
-
-
-
-    <section class="sobre-section" id="sobre">
-        <div class="sobre-container">
-
-            <!-- Texto -->
-            <div class="sobre">
-                <span>Sobre a S&O Sports</span>
-                <h2>Tradição, Qualidade e Performance</h2>
-
-                <p>
-                    A <strong>S&O Sports</strong> nasceu da paixão e visão de <strong>Altair e Daniela</strong>, um
-                    casal dedicado a oferecer o que há de melhor em vestuário e acessórios para os entusiastas de
-                    esporte de raquete. Seja você um jogador de Beach Tennis, Padel, Tênis ou qualquer outra modalidade
-                    que exija agilidade e estilo, a S&O Sports é a sua parceira ideal dentro e fora das quadras.
-                </p>
-                <p>
-                    Entendemos que o desempenho e o conforto caminham lado a lado. Por isso, a S&O se dedica a criar a
-                    selecionar peças que unem tecnologia de ponta, conforto inigualável e design moderno. Queremos que
-                    cada atleta se sinta confiante e livre para dar o seu melhor em cada jogo.
-                </p>
+    <section class="brands-section section-shell" id="marcas" aria-labelledby="brands-title">
+      <div class="section-heading brands-heading" data-reveal="left">
+        <h2 id="brands-title">O estilo entra <em>em quadra.</em></h2>
+        <p>Conheça as marcas da S&O. Escolha a que combina com você e peça opções à nossa equipe pelo WhatsApp.</p>
+      </div>
+      <div class="brands-grid">
+        <article class="brand-card brand-card-joog" data-reveal="left">
+          <a class="brand-card-link" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20roupas%20da%20JOOG%20na%20S%26O%20Sports." target="_blank" rel="noopener noreferrer" aria-label="Conhecer roupas JOOG pelo WhatsApp">
+            <div class="brand-card-media" data-gallery data-interval="4300">
+              <img class="gallery-image is-active" src="./image/jogador-joog.jpg" alt="" width="704" height="1472" loading="lazy">
+              <img class="gallery-image" src="./image/modelo-joog.jpg" alt="" width="704" height="930" loading="lazy">
             </div>
-
-
-            <div class="sobre-image">
-                <img src="./image/logo.jpg" alt="Logo S&O Sports">
+            <div class="brand-card-overlay" aria-hidden="true"></div>
+            <div class="brand-card-top"><span>01 / 04</span><span>BEACH TENNIS</span></div>
+            <div class="brand-card-bottom"><div><h3>JOOG</h3><p>Performance em cada movimento.</p></div><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></svg></span></div>
+          </a>
+        </article>
+        <article class="brand-card brand-card-sances" data-reveal="right">
+          <a class="brand-card-link" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20roupas%20da%20SANCES%20na%20S%26O%20Sports." target="_blank" rel="noopener noreferrer" aria-label="Conhecer roupas SANCES pelo WhatsApp">
+            <div class="brand-card-media" data-gallery data-interval="5200">
+              <img class="gallery-image is-active" src="./image/modelo-sances.jpg" alt="" width="981" height="1445" loading="lazy">
+              <img class="gallery-image alternate-crop" src="./image/modelo-sances.jpg" alt="" width="981" height="1445" loading="lazy">
             </div>
-
-        </div>
+            <div class="brand-card-overlay" aria-hidden="true"></div>
+            <div class="brand-card-top"><span>02 / 04</span><span>BEACH TENNIS</span></div>
+            <div class="brand-card-bottom"><div><h3>SANCES</h3><p>Leveza dentro e fora da quadra.</p></div><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></svg></span></div>
+          </a>
+        </article>
+        <article class="brand-card brand-card-lame" data-reveal="left">
+          <a class="brand-card-link" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20roupas%20da%20L%C3%82ME%20na%20S%26O%20Sports." target="_blank" rel="noopener noreferrer" aria-label="Conhecer roupas LÂME pelo WhatsApp">
+            <div class="brand-card-media" data-gallery data-interval="4700">
+              <img class="gallery-image is-active" src="./image/atleta.jpg" alt="" width="720" height="1080" loading="lazy">
+              <img class="gallery-image" src="./image/modelo-lame.jpg" alt="" width="800" height="1200" loading="lazy">
+            </div>
+            <div class="brand-card-overlay" aria-hidden="true"></div>
+            <div class="brand-card-top"><span>03 / 04</span><span>RAQUETE & ESTILO</span></div>
+            <div class="brand-card-bottom"><div><h3>LÂME</h3><p>Estilo que acompanha o jogo.</p></div><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></svg></span></div>
+          </a>
+        </article>
+        <article class="brand-card brand-card-infinity" data-reveal="right">
+          <a class="brand-card-link" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20roupas%20da%20INFINITY%20na%20S%26O%20Sports." target="_blank" rel="noopener noreferrer" aria-label="Conhecer roupas INFINITY pelo WhatsApp">
+            <div class="brand-card-media" data-gallery data-interval="5500">
+              <img class="gallery-image is-active" src="./image/modelo-infinity.jpg" alt="" width="800" height="1200" loading="lazy">
+              <img class="gallery-image alternate-crop" src="./image/modelo-infinity.jpg" alt="" width="800" height="1200" loading="lazy">
+            </div>
+            <div class="brand-card-overlay" aria-hidden="true"></div>
+            <div class="brand-card-top"><span>04 / 04</span><span>BEACH TENNIS</span></div>
+            <div class="brand-card-bottom"><div><h3>INFINITY</h3><p>Cor para entrar em jogo.</p></div><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></svg></span></div>
+          </a>
+        </article>
+      </div>
+      <p class="brands-note">Toque na marca para conversar sobre modelos, tamanhos e disponibilidade.</p>
     </section>
 
-    <!---- SECAO 3 -->
-
-    <section class="marcas-section" id="marcas">
-        <div class="marcas-header">
-            <span>Nossas Marcas</span>
-            <h2>Escolha seu Estilo</h2>
-        </div>
-
-        <div class="marcas-grid">
-
-            <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre as roupas da marca Lame."
-                class="marca-card">
-                <div class="marca-image">
-                    <img src="./image/jogador-joog.jpg" alt="Pessoa usando JOOG">
-                </div>
-
-                <div class="marca-content">
-                    <h3>JOOG</h3>
-                    <p>Performance e tecnologia.</p>
-                    <span class="cta-marca">Ver catálogo →</span>
-                </div>
-            </a>
-
-            <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre as roupas da marca Lame."
-                class="marca-card">
-                <div class="marca-image">
-                    <img src="./image/modelo-sances.jpg" alt="Pessoa usando SANCES">
-                </div>
-
-                <div class="marca-content">
-                    <h3>SANCES</h3>
-                    <p>Elegancia e conforto</p>
-                    <span class="cta-marca">Ver catálogo →</span>
-                </div>
-            </a>
-
-            <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre as roupas da marca Lame."
-                class="marca-card">
-                <div class="marca-image">
-                    <img src="./image/atleta.jpg" alt="Marca 2">
-                </div>
-
-                <div class="marca-content">
-                    <h3>LAME</h3>
-                    <p>Design clássico aliado ao conforto esportivo.</p>
-                    <span class="cta-marca">Ver catálogo →</span>
-                </div>
-            </a>
-
-            <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre as roupas da marca Lame."
-                class="marca-card">
-                <div class="marca-image">
-                    <img src="./image/modelo-infinity.jpg" alt="Marca 2">
-                </div>
-
-                <div class="marca-content">
-                    <h3>INFINITY</h3>
-                    <p>Design clássico aliado ao conforto esportivo.</p>
-                    <span class="cta-marca">Ver catálogo →</span>
-                </div>
-            </a>
-        </div>
+    <section class="lookbook-section" aria-labelledby="lookbook-title">
+      <div class="lookbook-heading section-shell" data-reveal="left"><h2 id="lookbook-title">Feito para <em>se mover.</em></h2><p>Da areia ao dia a dia, peças que acompanham o seu ritmo.</p></div>
+      <div class="lookbook-grid">
+        <figure class="lookbook-image lookbook-image-tall" data-reveal="left"><img src="./image/WhatsApp Image 2026-10-21 at 23.15.49 (2).jpeg" alt="Atleta de branco com raquete de beach tennis" width="899" height="1599" loading="lazy"><figcaption>01 / MOVIMENTO</figcaption></figure>
+        <figure class="lookbook-image lookbook-image-center" data-reveal="right"><img src="./image/WhatsApp Image 2026-10-21 at 23.15.43 (2).jpeg" alt="Duas atletas com roupas esportivas rosas e raquetes" width="718" height="1044" loading="lazy"><figcaption>02 / LIBERDADE</figcaption></figure>
+        <figure class="lookbook-image lookbook-image-short" data-reveal="right"><img src="./image/WhatsApp Image 2026-10-21 at 23.15.49 (1).jpeg" alt="Atleta com roupa esportiva rosa" width="899" height="1599" loading="lazy"><figcaption>03 / ESTILO</figcaption></figure>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-container">
+    <section class="about-section" id="sobre" aria-labelledby="about-title">
+      <div class="about-images" aria-hidden="true" data-reveal="left">
+        <img class="about-image-main" src="./image/WhatsApp Image 2026-10-21 at 23.15.47 (1).jpeg" alt="" width="880" height="1197" loading="lazy">
+        <img class="about-image-detail" src="./image/atleta-ajustado.jpg" alt="" width="588" height="868" loading="lazy">
+      </div>
+      <div class="about-copy"><div class="about-copy-inner" data-reveal="right">
+        <span class="about-mark" aria-hidden="true">S&O</span>
+        <h2 id="about-title">Paixão pelo esporte. Olhar para cada detalhe.</h2>
+        <p>A S&O Sports nasceu da paixão de Altair e Daniela pelos esportes de raquete. Reunimos peças para quem busca conforto, movimento e estilo dentro e fora das quadras.</p>
+        <p>Seja no beach tennis, no padel ou no tênis, queremos ajudar você a encontrar a roupa certa para entrar em jogo.</p>
+        <a class="text-link" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20melhor%20a%20S%26O%20Sports." target="_blank" rel="noopener noreferrer">Fale com a nossa equipe <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></a>
+      </div></div>
+    </section>
 
-            <!-- Marca -->
-            <div class="footer-brand">
-                <img src="./image/logo.jpg" alt="S&O Sports">
-                <p>
-                    Desde 2024, a S&O Sports entrega roupas esportivas que unem
-                    performance, conforto e estilo clássico.
-                </p>
-            </div>
+    <section class="contact-section" id="contato" aria-labelledby="contact-title">
+      <div class="contact-inner" data-reveal="left">
+        <div><p class="contact-label">PRONTO PARA JOGAR?</p><h2 id="contact-title">Seu próximo look começa <em>aqui.</em></h2></div>
+        <div class="contact-action"><p>Conte para a gente o que você procura. A S&O ajuda você a escolher pelo WhatsApp.</p><a class="button button-light" href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20quero%20ajuda%20para%20escolher%20roupas%20esportivas%20na%20S%26O%20Sports." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></a></div>
+      </div>
+    </section>
+  </main>
 
-            <!-- Institucional -->
-            <div>
-                <h4>Institucional</h4>
-                <ul>
-                    <li><a href="#sobre">Sobre a S&O</a></li>
-                    <li><a href="#sobre">Nossa História</a></li>
-                </ul>
-            </div>
-
-            <!-- Marcas -->
-            <div>
-                <h4>Marcas</h4>
-                <ul>
-                    <li><a href="#marcas">Joog</a></li>
-                    <li><a href="#marcas">Infinity Play</a></li>
-                    <li><a href="#marcas">Lame Sports</a></li>
-                    <li><a href="#marcas">Sances</a></li>
-                </ul>
-            </div>
-
-            <!-- Contato -->
-            <div class="footer-contact">
-                <h4>Contato</h4>
-                <p>📍 Joinville - SC </p>
-                <a href="https://wa.me/+5547991921783?text= Olá, gostaria de mais informações sobre as roupas">
-                <p>📞 (47) 99192-1783</p>
-                </a>
-                <p>✉️ contato@sosports.com.br</p>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <span>© 2025 S&O Sports. Todos os direitos reservados.</span>
-        </div>
-    </footer>
-
-
-
-
-
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><a class="brand" href="#topo" aria-label="S&O Sports, voltar ao início"><img src="./image/logo.jpg" alt="" width="58" height="58"><span>S&O <strong>SPORTS</strong></span></a><p>Roupas para viver o esporte do seu jeito.</p></div>
+      <nav aria-label="Navegação do rodapé"><a href="#marcas">Marcas</a><a href="#sobre">Nossa história</a><a href="#contato">Contato</a></nav>
+      <div class="footer-contact"><span>Joinville · SC</span><a href="https://wa.me/5547991921783?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20S%26O%20Sports." target="_blank" rel="noopener noreferrer">(47) 99192-1783</a></div>
+    </div>
+    <div class="footer-bottom"><small>© <span id="year">2026</span> S&O Sports</small><a href="#topo">Voltar ao topo</a></div>
+  </footer>
 </body>
-
 </html>

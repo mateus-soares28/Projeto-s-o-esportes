@@ -1,0 +1,173 @@
+/* S&O Sports — editorial court direction. Existing palette and content stay intact. */
+html { scroll-padding-top: 76px; }
+body { overflow-x: clip; }
+.site-header { background: rgba(246,247,242,.96); border-color: rgba(11,81,43,.12); backdrop-filter: blur(16px); }
+.header-inner { max-width: 1680px; height: 76px; padding-inline: clamp(24px,5vw,80px); }
+.brand { gap: 8px; }
+.brand img { width: 52px; height: 52px; border-radius: 0; }
+.brand span { display: inline-flex; align-items: baseline; gap: 4px; font: 800 1.65rem/1 var(--font-display); letter-spacing: -.025em; white-space: nowrap; }
+.brand strong { font-size: .78em; font-weight: 600; letter-spacing: .02em; }
+.site-nav a { font-size: .82rem; }
+.header-whatsapp { background: var(--green-deep); border-radius: 10px; font-size: .79rem; }
+.menu-toggle { border-radius: 9px; }
+.header-whatsapp:hover { background: var(--green); }
+
+.hero { position: relative; grid-template-columns: minmax(0,54%) minmax(0,46%); min-height: min(790px,calc(100svh - 76px)); background: var(--cream); }
+.hero-copy { z-index: 2; padding: 78px clamp(38px,6.5vw,112px) 40px max(30px,calc((100vw - 1520px)/2 + 64px)); color: var(--ink); }
+.hero-copy-inner { max-width: 710px; }
+.hero-intro { margin-bottom: 34px; color: var(--green); font-size: .69rem; font-weight: 700; letter-spacing: .2em; }
+.hero h1 { max-width: 760px; font-size: clamp(5rem,8vw,8.5rem); line-height: .83; letter-spacing: -.025em; }
+.hero h1 em { color: var(--green); }
+.hero-description { max-width: 450px; margin: 42px 0 30px; color: var(--muted); font-size: clamp(.94rem,1.08vw,1.04rem); line-height: 1.7; }
+.hero-actions { gap: 26px; }
+.button { min-height: 56px; border-radius: 10px; font-size: .82rem; }
+.hero .button-light { background: var(--green-deep); color: var(--white); }
+.hero .button-light:hover { background: var(--green); }
+.text-link-light { border-color: var(--green-deep); color: var(--green-deep); }
+.hero-bottom { padding-top: 60px; color: var(--green-deep); font-size: 1rem; letter-spacing: .09em; }
+.hero-bottom span { color: #7dab84; }
+.hero-media { min-height: 620px; }
+.hero-media .gallery-image { object-position: center 39%; }
+.hero-media .gallery-image:nth-child(2) { object-position: center 34%; }
+.hero-media .gallery-image:nth-child(3) { object-position: center 28%; }
+.hero-media-shade { background: linear-gradient(0deg,rgba(5,34,19,.47),transparent 36%); }
+.hero-media-caption { right: 40px; bottom: 40px; left: 40px; font-size: .7rem; letter-spacing: .17em; }
+.hero-orbit { position: absolute; z-index: 4; right: calc(46% - 104px); bottom: 92px; display: grid; place-items: center; width: 208px; height: 208px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; background: var(--green-deep); box-shadow: 0 22px 50px rgba(8,61,34,.22); pointer-events: none; }
+.hero-orbit canvas { display: block; width: 100%; height: 100%; border-radius: 50%; }
+.hero-ball-fallback { position: absolute; top: 50%; left: 50%; width: 115%; height: 115%; object-fit: contain; transform: translate(-50%,-50%); filter: drop-shadow(0 10px 13px rgba(2,31,14,.22)); }
+.hero-orbit:not(.is-rendering) .hero-ball-fallback { animation: ball-float 5s ease-in-out infinite; }
+.hero-orbit.is-rendering .hero-ball-fallback { display: none; }
+@keyframes ball-float { 0%,100% { transform: translate(-50%,-50%) perspective(500px) rotateY(-7deg) translateY(0); } 50% { transform: translate(-50%,-50%) perspective(500px) rotateY(7deg) translateY(-6px); } }
+.hero-orbit span { display: none; }
+
+.sport-strip { height: 60px; background: var(--green-deep); color: var(--cream); }
+.sport-strip-track { gap: clamp(30px,5vw,85px); }
+.sport-strip span { font-size: 1.26rem; font-weight: 600; letter-spacing: .11em; }
+.sport-strip i { width: 5px; height: 5px; background: #bde0a7; }
+.section-shell { max-width: 1680px; padding-inline: clamp(24px,5vw,80px); }
+.brands-section { padding-block: clamp(90px,10vw,150px); }
+.section-heading h2,.lookbook-heading h2,.about-copy h2,.contact-section h2 { font-size: clamp(4rem,6.6vw,6rem); line-height: .9; letter-spacing: -.025em; }
+.section-heading h2 { max-width: 710px; }
+.section-heading p { max-width: 330px; }
+.brands-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-top: 55px; }
+.brand-card { aspect-ratio: 1.24; }
+.brand-card-media .gallery-image { object-position: center 22%; }
+.brand-card-joog .gallery-image:first-child { object-position: center 28%; }
+.brand-card-sances .gallery-image { object-position: center 32%; }
+.brand-card-lame .gallery-image { object-position: center 25%; }
+.brand-card-infinity .gallery-image { object-position: center 24%; }
+.brand-card-overlay { background: linear-gradient(0deg,rgba(4,25,13,.84),rgba(4,25,13,.05) 54%,rgba(4,25,13,.22)); }
+.brand-card-top { top: 26px; right: 27px; left: 27px; font-size: .69rem; letter-spacing: .13em; }
+.brand-card-bottom { right: 27px; bottom: 29px; left: 27px; }
+.brand-card h3 { font-size: clamp(4.5rem,6vw,6rem); }
+.brand-card p { margin-top: 14px; font-size: .82rem; }
+.card-arrow { width: 51px; height: 51px; }
+.brand-card:hover .card-arrow,.brand-card:focus-within .card-arrow { transform: rotate(45deg); }
+
+.lookbook-section { overflow: hidden; padding: clamp(90px,9vw,140px) 0 clamp(100px,9vw,150px); background: var(--green-dark); color: var(--white); }
+.lookbook-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+.lookbook-heading h2 { max-width: 780px; }
+.lookbook-heading h2 em { display: block; color: #c9e5b4; }
+.lookbook-heading p { max-width: 260px; color: #d5ead5; font-size: .95rem; line-height: 1.7; }
+.lookbook-grid { display: grid; grid-template-columns: 1.08fr .96fr .82fr; align-items: start; gap: clamp(12px,2.3vw,35px); width: min(100%,1680px); margin: clamp(45px,5vw,75px) auto 0; padding: 0 clamp(24px,5vw,80px); }
+.lookbook-image { position: relative; overflow: hidden; background: #c5d0c4; }
+.lookbook-image-tall { height: clamp(430px,47vw,680px); }
+.lookbook-image-center { height: clamp(360px,39vw,560px); margin-top: 90px; }
+.lookbook-image-short { height: clamp(310px,33vw,470px); margin-top: 185px; }
+.lookbook-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; transition: transform .8s var(--ease-out); }
+.lookbook-image:hover img { transform: scale(1.045); }
+.lookbook-image figcaption { position: absolute; right: 20px; bottom: 18px; left: 20px; color: var(--white); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+
+.about-section { min-height: 720px; }
+.about-images { min-height: 720px; }
+.about-image-main { width: 78%; object-position: center 30%; }
+.about-image-detail { right: 5%; bottom: 7%; width: 36%; height: 53%; border-width: 8px; }
+.about-copy { padding: 75px clamp(35px,6.5vw,110px); }
+.about-mark { margin-bottom: 30px; font-size: 1.9rem; }
+.about-copy h2 { max-width: 560px; font-size: clamp(4rem,5.4vw,5.9rem); }
+.about-copy p { color: #435c49; }
+.contact-section { position: relative; }
+.contact-section::after { content: "S&O"; position: absolute; right: -1%; bottom: -23%; color: rgba(255,255,255,.055); font: 800 clamp(20rem,44vw,50rem)/.75 var(--font-display); pointer-events: none; }
+.contact-inner { position: relative; z-index: 1; max-width: 1680px; padding: clamp(95px,10vw,150px) clamp(24px,5vw,80px); }
+.contact-label { font-size: .7rem; }
+.contact-section .button-light { background: var(--cream); color: var(--green-dark); }
+.contact-section .button-light:hover { background: var(--white); }
+.footer-inner,.footer-bottom { max-width: 1680px; padding-inline: clamp(24px,5vw,80px); }
+.footer-inner .brand span { color: var(--white); }
+@media (prefers-reduced-motion: reduce) { .hero-orbit:not(.is-rendering) .hero-ball-fallback { animation: none; } }
+
+@media (max-width: 1180px) {
+  .hero h1 { font-size: clamp(4.8rem,8.2vw,7rem); }
+  .hero-orbit { right: calc(46% - 80px); width: 160px; height: 160px; }
+  .hero-orbit span { right: 17px; bottom: 17px; font-size: .64rem; }
+  .brand-card { aspect-ratio: 1.03; }
+}
+@media (max-width: 900px) {
+  html { scroll-padding-top: 70px; }
+  .header-inner { height: 70px; }
+  .site-nav { top: 69px; }
+  .hero { grid-template-columns: 50% 50%; min-height: 650px; }
+  .hero-copy { padding: 65px 32px 28px; }
+  .hero-media { min-height: 650px; }
+  .hero-orbit { right: calc(50% - 80px); bottom: 55px; }
+  .hero h1 { font-size: clamp(4.4rem,8.4vw,6.4rem); }
+  .hero-description { margin-top: 30px; }
+  .lookbook-image-center { margin-top: 60px; }
+  .lookbook-image-short { margin-top: 120px; }
+}
+@media (max-width: 760px) {
+  .hero { display: flex; flex-direction: column-reverse; min-height: calc(100svh - 70px); }
+  .hero-media { position: relative; inset: auto; min-height: 0; height: min(54svh,510px); flex: none; }
+  .hero-copy { min-height: 420px; flex: 1; padding: 52px clamp(24px,6vw,45px) 26px; background: var(--cream); }
+  .hero-intro { margin-bottom: 24px; }
+  .hero h1 { max-width: 650px; font-size: clamp(5rem,12vw,7rem); }
+  .hero-description { max-width: 540px; margin: 25px 0; }
+  .hero-bottom { padding-top: 32px; }
+  .hero-orbit { top: min(54svh,510px); right: 24px; bottom: auto; width: 125px; height: 125px; transform: translateY(-50%); }
+  .hero-orbit span { display: none; }
+  .hero-media-caption { display: none; }
+  .section-heading,.lookbook-heading { display: block; }
+  .section-heading p,.lookbook-heading p { max-width: 520px; margin-top: 25px; }
+  .brands-grid { gap: 12px; }
+  .brand-card { aspect-ratio: .8; }
+  .brand-card h3 { font-size: clamp(3.8rem,8vw,5rem); }
+  .lookbook-grid { grid-template-columns: 1fr 1fr; }
+  .lookbook-image-tall { height: 510px; }
+  .lookbook-image-center { height: 450px; margin-top: 75px; }
+  .lookbook-image-short { grid-column: 1 / -1; height: 420px; margin-top: 0; }
+  .about-images { min-height: 530px; }
+  .about-image-main { width: 75%; }
+}
+@media (max-width: 560px) {
+  .header-inner { padding-inline: 16px; }
+  .brand img { width: 43px; height: 43px; }
+  .brand span { display: none; }
+  .header-whatsapp { min-height: 42px; padding: 0 11px; font-size: .68rem; }
+  .header-whatsapp svg { display: none; }
+  .hero-copy { min-height: 445px; }
+  .hero h1 { font-size: clamp(3.7rem,12vw,5rem); }
+  .hero h1 em { display: block; }
+  .hero-description { font-size: .9rem; line-height: 1.6; }
+  .hero-bottom { font-size: .88rem; white-space: normal; }
+  .hero-bottom span { padding-inline: 5px; }
+  .sport-strip { height: 55px; }
+  .sport-strip-track { gap: 16px; }
+  .sport-strip span { font-size: 1rem; }
+  .section-heading h2,.lookbook-heading h2,.contact-section h2 { font-size: clamp(4.1rem,13vw,5.8rem); }
+  .brands-grid { grid-template-columns: 1fr; margin-top: 35px; }
+  .brand-card { aspect-ratio: .9; }
+  .brand-card h3 { font-size: clamp(4.6rem,16vw,6rem); }
+  .brands-note { text-align: left; }
+  .lookbook-grid { gap: 12px; padding-inline: 16px; }
+  .lookbook-image-tall { height: 350px; }
+  .lookbook-image-center { height: 310px; margin-top: 40px; }
+  .lookbook-image-short { height: 380px; }
+  .about-images { min-height: 390px; }
+  .about-image-main { width: 76%; }
+  .about-image-detail { width: 39%; height: 65%; border-width: 6px; }
+  .about-copy h2 { font-size: clamp(3.8rem,12vw,5.3rem); }
+}
+@media (max-width: 380px) {
+  .brand span { display: none; }
+  .hero h1 { font-size: 4.3rem; }
+}
