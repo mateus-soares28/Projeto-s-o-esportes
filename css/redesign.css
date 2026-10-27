@@ -57,6 +57,9 @@ body { overflow-x: clip; }
 .brand-card-sances .gallery-image { object-position: center 32%; }
 .brand-card-lame .gallery-image { object-position: center 25%; }
 .brand-card-infinity .gallery-image { object-position: center 24%; }
+.brand-card-gorilla { grid-column: 1 / -1; aspect-ratio: 2.48; }
+.brand-card-gorilla .gallery-image { object-position: center 48%; }
+.brand-card-gorilla h3 { font-size: clamp(3.4rem,6vw,6rem); }
 .brand-card-overlay { background: linear-gradient(0deg,rgba(4,25,13,.84),rgba(4,25,13,.05) 54%,rgba(4,25,13,.22)); }
 .brand-card-top { top: 26px; right: 27px; left: 27px; font-size: .69rem; letter-spacing: .13em; }
 .brand-card-bottom { right: 27px; bottom: 29px; left: 27px; }
@@ -157,7 +160,9 @@ body { overflow-x: clip; }
   .section-heading h2,.lookbook-heading h2,.contact-section h2 { font-size: clamp(4.1rem,13vw,5.8rem); }
   .brands-grid { grid-template-columns: 1fr; margin-top: 35px; }
   .brand-card { aspect-ratio: .9; }
+  .brand-card-gorilla { grid-column: auto; aspect-ratio: .9; }
   .brand-card h3 { font-size: clamp(4.6rem,16vw,6rem); }
+  .brand-card-gorilla h3 { font-size: clamp(3.2rem,12vw,4.5rem); }
   .brands-note { text-align: left; }
   .lookbook-grid { gap: 12px; padding-inline: 16px; }
   .lookbook-image-tall { height: 350px; }
