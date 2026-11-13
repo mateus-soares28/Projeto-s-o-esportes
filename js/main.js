@@ -1,3 +1,22 @@
+const preloader = document.querySelector(".preloader");
+if (preloader) {
+  document.body.classList.add("is-loading");
+  const dismissPreloader = () => {
+    if (preloader.classList.contains("is-hidden")) return;
+    preloader.classList.add("is-hidden");
+    document.body.classList.remove("is-loading");
+    window.setTimeout(() => preloader.remove(), 700);
+  };
+  const preloaderImage = preloader.querySelector("img");
+  if (preloaderImage.complete) {
+    window.setTimeout(dismissPreloader, 1500);
+  } else {
+    preloaderImage.addEventListener("load", () => window.setTimeout(dismissPreloader, 1500), { once: true });
+    preloaderImage.addEventListener("error", dismissPreloader, { once: true });
+    window.setTimeout(dismissPreloader, 5000);
+  }
+}
+
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
 
